@@ -14,13 +14,13 @@ export default function GithubProfileCard({prof}) {
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="contact">
-        <h1 className="prof-title">Reach Out to me!</h1>
         <div className="row">
           <div className="main-content-profile">
+            <h1 className="heading prof-title">{contactInfo.title}</h1>
             <div className="blog-header">
               <p className="subTitle blog-subtitle">{contactInfo.subtitle}</p>
             </div>
-            <h2 className="bio-text">"{emoji(String(prof.bio))}"</h2>
+            {/* <h2 className="bio-text">"{emoji(String(prof.bio))}"</h2> */}
             {prof.location !== null && (
               <div className="location-div">
                 <span className="desc-prof">
@@ -48,11 +48,11 @@ export default function GithubProfileCard({prof}) {
             </div>
             <SocialMedia />
           </div>
-          <div className="image-content-profile">
+          <div className="contact-image">
             <img
-              src={prof.avatarUrl}
+              src={require("../../assets/images/contactMailDark.svg")}
               alt={prof.name}
-              className="profile-image"
+              className="image-content-profile"
             />
           </div>
         </div>

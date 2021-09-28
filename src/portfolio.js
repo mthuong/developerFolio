@@ -11,26 +11,23 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Tom Nguyen",
+  title: "Hi all, I'm Thường (Tom) Nguyễn",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Software Developer 🚀 having an experience of building Mobile applications with iOS, React Native, Flutter and Web with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/19s2iC8Sqzn0YuRFUMC4nLKtuYcACofOd/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/mthuong",
+  linkedin: "https://www.linkedin.com/in/thuong-nguyen-manh/",
+  gmail: "nguyenmanhthuong41@gmail.com",
+  stackoverflow: "https://stackoverflow.com/users/741291/mthuong",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -40,14 +37,17 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "DEVELOP SOFTWARE, COLLABORATE WITH OTHERS AND LEARN NEW THINGS EVERY DAY",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Develop highly interactive Front end / User Interfaces mobile applications"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Develop back-end and front-end for web applications"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Integration of third party services such as Firebase"
+    ),
+    emoji(
+      "⚡ Continuous Integration/Delivery with Jenkins, CircleCI and more"
     )
   ],
 
@@ -56,56 +56,83 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "XCode",
+      icon: require("./assets/images/skills/xcode.png"),
+      url: "https://developer.apple.com/xcode/"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "Swift",
+      icon: require("./assets/images/skills/swift.png"),
+      url: "https://developer.apple.com/swift/"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "SwiftUI",
+      icon: require("./assets/images/skills/swiftui.png"),
+      url: "https://developer.apple.com/xcode/swiftui/"
     },
     {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      skillName: "React Native",
+      icon: require("./assets/images/skills/react-native.png"),
+      url: "https://reactnative.dev/"
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      skillName: "Flutter",
+      icon: require("./assets/images/skills/flutter.png"),
+      url: "https://flutter.dev/",
+      height: 60,
+      width: "auto"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "ReactJS",
+      icon: require("./assets/images/skills/react-native.png"),
+      url: "https://reactjs.org/"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "NextJS",
+      icon: require("./assets/images/skills/nextjs.png"),
+      url: "https://nextjs.org/"
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "NodeJS",
+      icon: require("./assets/images/skills/nodejs.png"),
+      url: "https://nodejs.org/",
+      height: 60,
+      width: "auto"
     },
     {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
+      skillName: "NestJS",
+      icon: require("./assets/images/skills/nestjs.png"),
+      url: "https://nestjs.com/",
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
+      skillName: "TypeScript",
+      icon: require("./assets/images/skills/typescript.png"),
+      url: "https://www.typescriptlang.org/"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      skillName: "Javascript",
+      icon: require("./assets/images/skills/javascript.png"),
+      url: "https://www.javascript.com/"
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "Jenkins",
+      icon: require("./assets/images/skills/jenkins.png"),
+      url: "https://www.jenkins.io/",
+      height: 60,
+      width: "auto"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "CircleCI",
+      iconDark: require("./assets/images/skills/circle-ci-white.png"),
+      icon: require("./assets/images/skills/circle-ci-black.png"),
+      url: "https://circleci.com/",
+      height: 60,
+      width: "auto"
+    },
+    {
+      skillName: "Firebase",
+      icon: require("./assets/images/skills/firebase.png"),
+      url: "https://firebase.google.com/"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -117,24 +144,16 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "HCMC University of Technology and Education",
+      logo: require("./assets/images/hcmute.png"),
+      subHeader: "The Degree of Bachelor in Information Technology",
+      duration: "September 2006 - April 2011",
+      desc: "",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Some courses: Computer Science, Data Structure and Algorithms, Databases Systems, Web Development, Object Oriented Programming, Artificial Intelligence, Information Security",
+        "Teaching Assistant for Web Development"
       ]
     },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
-    }
   ]
 };
 
@@ -144,15 +163,19 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      Stack: "iOS App Development", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "Front-end web application",
+      progressPercentage: "75%"
     },
     {
-      Stack: "Programming",
+      Stack: "Backend",
+      progressPercentage: "60%"
+    },
+    {
+      Stack: "Android App Development",
       progressPercentage: "60%"
     }
   ],
@@ -350,9 +373,8 @@ const podcastSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-3243454077",
-  email_address: "saadpasta70@gmail.com"
+    "IF YOU WANT TO DISCUSS ANYTHING, CONTACT ME AT ONE OF THESE SOCIAL MEDIA BELOW",
+  email_address: "nguyenmanhthuong41@gmail.com"
 };
 
 // Twitter Section
