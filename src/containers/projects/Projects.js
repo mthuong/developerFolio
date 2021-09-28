@@ -4,6 +4,7 @@ import Button from "../../components/button/Button";
 import {openSource, socialMediaLinks} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 import Loading from "../../containers/loading/Loading";
+import emoji from 'react-easy-emoji';
 export default function Projects() {
   const GithubRepoCard = lazy(() =>
     import("../../components/githubRepoCard/GithubRepoCard")
@@ -11,7 +12,7 @@ export default function Projects() {
   const FailedLoading = () => null;
   const renderLoader = () => <Loading />;
   const [repo, setrepo] = useState([]);
-  // todo: remove useContex because is not supported
+  // todo: remove useContext because is not supported
   const {isDark} = useContext(StyleContext);
 
   useEffect(() => {
@@ -24,6 +25,7 @@ export default function Projects() {
           throw result;
         })
         .then(response => {
+          console.log(response.data.user);
           setrepoFunction(response.data.user.pinnedItems.edges);
         })
         .catch(function (error) {
@@ -47,7 +49,7 @@ export default function Projects() {
     return (
       <Suspense fallback={renderLoader()}>
         <div className="main" id="opensource">
-          <h1 className="project-title">Open Source Projects</h1>
+          <h1 className="project-title">{emoji("🌐")} Open Source Projects</h1>
           <div className="repo-cards-div-main">
             {repo.map((v, i) => {
               return (
