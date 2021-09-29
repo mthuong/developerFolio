@@ -115,6 +115,16 @@ https://fontawesome.com/icons?d=gallery */
       url: "https://www.javascript.com/"
     },
     {
+      skillName: "Selenium",
+      icon: require("./assets/images/skills/selenium.png"),
+      url: "https://www.selenium.dev/"
+    },
+    {
+      skillName: "Firebase",
+      icon: require("./assets/images/skills/firebase.png"),
+      url: "https://firebase.google.com/"
+    },
+    {
       skillName: "Jenkins",
       icon: require("./assets/images/skills/jenkins.png"),
       url: "https://www.jenkins.io/",
@@ -129,11 +139,6 @@ https://fontawesome.com/icons?d=gallery */
       height: 60,
       width: "auto"
     },
-    {
-      skillName: "Firebase",
-      icon: require("./assets/images/skills/firebase.png"),
-      url: "https://firebase.google.com/"
-    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -188,29 +193,74 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Mobile team leader / Mobile developer",
+      company: "ItAds",
+      url: "https://itads.net/",
+      companylogo: require("./assets/images/companies/itads.png"),
+      date: "Oct 2019 – Present",
+      desc: "Build best applications for Thailand market",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Setup Jenkins for auto-deployment mobile applications",
+        "Write gray box end-to-end testing and automation library for mobile apps with Detox, Selenium",
+        "Integrated automation testing with Jenkins",
+        "Write unit test with Jest for React Native application",
+        "Setup bitbucket pipeline to run Jest automatically for any Pull request",
+        "Review codes",
+        "Setup React Native project boilerplate with Typescript, mobx, redux, i18n, react-navigation.",
+        "Work with Flutter, NodeJS, ReactJS",
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Mobile team leader/manager / Mobile developer",
+      company: "The App Team",
+      url: "https://www.theappteam.com.au/",
+      companylogo: require("./assets/images/companies/theappteam.png"),
+      date: "July 2017 - Sep 2019",
+      desc: "Team Manager - build up a new company.",
+      descBullets: [
+        "Mobile Team Leader. Mobile Developer",
+        "Successfully build up a new company at the beginning",
+        "Planned, supervised, and coordinated daily activity of Vietnam team and Australia team",
+        "React Native developer",
+        "iOS Mobile Application developer"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "General Manager / Team Leader / Mobile Developer",
+      company: "Kerofrog",
+      url: "https://twitter.com/kerofrogapps",
+      companylogo: require("./assets/images/companies/kerofrog.jpg"),
+      date: "May 2015 - July 2017",
+      // desc: "Build up a new company",
+      descBullets: [
+        "Build up a new company",
+        "Training team member",
+        "Build iOS Mobile application",
+      ]
+    },
+    {
+      role: "Senior Mobile Developer",
+      company: "Vinasource",
+      url: "https://www.facebook.com/PoetaVietnam",
+      companylogo: require("./assets/images/companies/vinasource.png"),
+      date: "Nov 2012 – Jun 2015",
+      // desc: "Main responsible for iOS mobile project",
+      descBullets: [
+        "Main responsible for iOS mobile project",
+        "Guide new junior member",
+      ]
+    },
+    {
+      role: "Mobile Developer",
+      company: "TMA Solution",
+      url: "https://www.tma.vn/",
+      companylogo: require("./assets/images/companies/tma.jpeg"),
+      date: "Jan 2011 – Nov 2012",
+      // desc: "Main responsible for iOS mobile project",
+      descBullets: [
+        "Develop new application base on requirement with iOS Objective-C",
+        "Write unit test"
+      ]
     }
   ]
 };
