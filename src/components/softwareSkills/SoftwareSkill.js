@@ -4,13 +4,14 @@ import "./SoftwareSkill.scss";
 import {skillsSection} from "../../portfolio";
 
 export default function SoftwareSkill() {
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
   return (
     <div>
       <div className="software-skills-main-div">
         <ul className="dev-icons">
           {skillsSection.softwareSkills.map((skills, i) => {
-            const icon = skills.iconDark && isDark ? skills.iconDark : skills.icon;
+            const icon =
+              skills.iconDark && isDark ? skills.iconDark : skills.icon;
 
             return (
               <li
@@ -18,7 +19,14 @@ export default function SoftwareSkill() {
                 className="software-skill-inline"
                 name={skills.skillName}
               >
-                <a alt={skills.skillName} href={skills.url}><img src={icon} alt={skills.skillName} width={skills.width ?? "60"} height={skills.height} /></a>
+                <a alt={skills.skillName} href={skills.url}>
+                  <img
+                    src={icon}
+                    alt={skills.skillName}
+                    width={skills.width ?? "60"}
+                    height={skills.height}
+                  />
+                </a>
                 <p>{skills.skillName}</p>
               </li>
             );

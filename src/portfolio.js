@@ -37,18 +37,15 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "DEVELOP SOFTWARE, COLLABORATE WITH OTHERS AND LEARN NEW THINGS EVERY DAY",
+  subTitle:
+    "DEVELOP SOFTWARE, COLLABORATE WITH OTHERS AND LEARN NEW THINGS EVERY DAY",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces mobile applications"
     ),
     emoji("⚡ Develop back-end and front-end for web applications"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase"
-    ),
-    emoji(
-      "⚡ Continuous Integration/Delivery with Jenkins, CircleCI and more"
-    )
+    emoji("⚡ Integration of third party services such as Firebase"),
+    emoji("⚡ Continuous Integration/Delivery with Jenkins, CircleCI and more")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -102,7 +99,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "NestJS",
       icon: require("./assets/images/skills/nestjs.png"),
-      url: "https://nestjs.com/",
+      url: "https://nestjs.com/"
     },
     {
       skillName: "TypeScript",
@@ -138,7 +135,7 @@ https://fontawesome.com/icons?d=gallery */
       url: "https://circleci.com/",
       height: 60,
       width: "auto"
-    },
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -158,7 +155,7 @@ const educationInfo = {
         "Some courses: Computer Science, Data Structure and Algorithms, Databases Systems, Web Development, Object Oriented Programming, Artificial Intelligence, Information Security",
         "Teaching Assistant for Web Development"
       ]
-    },
+    }
   ]
 };
 
@@ -207,7 +204,7 @@ const workExperiences = {
         "Setup bitbucket pipeline to run Jest automatically for any Pull request",
         "Review codes",
         "Setup React Native project boilerplate with Typescript, mobx, redux, i18n, react-navigation.",
-        "Work with Flutter, NodeJS, ReactJS",
+        "Work with Flutter, NodeJS, ReactJS"
       ]
     },
     {
@@ -235,7 +232,7 @@ const workExperiences = {
       descBullets: [
         "Build up a new company",
         "Training team member",
-        "Build iOS Mobile application",
+        "Build iOS Mobile application"
       ]
     },
     {
@@ -247,7 +244,7 @@ const workExperiences = {
       // desc: "Main responsible for iOS mobile project",
       descBullets: [
         "Main responsible for iOS mobile project",
-        "Guide new junior member",
+        "Guide new junior member"
       ]
     },
     {
