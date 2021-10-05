@@ -14,10 +14,10 @@ const greeting = {
   username: "Tom Nguyen",
   title: "Hi all, I'm Thường (Tom) Nguyễn",
   subTitle: emoji(
-    "A passionate Software Developer 🚀 having an experience of building Mobile applications with iOS, React Native, Flutter and Web with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks."
+    "A passionate Software Developer 🚀 having an experience of building Mobile applications with Swift, Objective-C, React Native, Flutter and Web with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/19s2iC8Sqzn0YuRFUMC4nLKtuYcACofOd/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1YDqNcwFOYakgaFKCz2-I7hm0-ATLfBuy/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -44,6 +44,9 @@ const skillsSection = {
       "⚡ Develop highly interactive Front end / User Interfaces mobile applications"
     ),
     emoji("⚡ Develop back-end and front-end for web applications"),
+    emoji(
+      "⚡ Ensured quality and performance of application by performing unit and automation tests"
+    ),
     emoji("⚡ Integration of third party services such as Firebase"),
     emoji("⚡ Continuous Integration/Delivery with Jenkins, CircleCI and more")
   ],
@@ -135,6 +138,13 @@ https://fontawesome.com/icons?d=gallery */
       url: "https://circleci.com/",
       height: 60,
       width: "auto"
+    },
+    {
+      skillName: "Bitrise",
+      icon: require("./assets/images/skills/bitrise.png"),
+      url: "https://www.bitrise.io/",
+      height: 60,
+      width: "auto"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -169,6 +179,14 @@ const techStack = {
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
+      Stack: "React Native App Development", //Insert stack or technology you have experience in
+      progressPercentage: "90%" //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "Flutter App Development", //Insert stack or technology you have experience in
+      progressPercentage: "80%" //Insert relative proficiency in percentage
+    },
+    {
       Stack: "Front-end web application",
       progressPercentage: "75%"
     },
@@ -195,56 +213,59 @@ const workExperiences = {
       url: "https://itads.net/",
       companylogo: require("./assets/images/companies/itads.png"),
       date: "Oct 2019 – Present",
-      desc: "Build best applications for Thailand market",
+      desc: "Developed, launched, and maintained an enterprise mobile application which serves marketing purposes for more than 2,000 Isuzu and Mitsubishi care salespeople in Thailand.",
       descBullets: [
-        "Setup Jenkins for auto-deployment mobile applications",
-        "Write gray box end-to-end testing and automation library for mobile apps with Detox, Selenium",
-        "Integrated automation testing with Jenkins",
-        "Write unit test with Jest for React Native application",
-        "Setup bitbucket pipeline to run Jest automatically for any Pull request",
-        "Review codes",
-        "Setup React Native project boilerplate with Typescript, mobx, redux, i18n, react-navigation.",
-        "Work with Flutter, NodeJS, ReactJS"
+        "Mentor for new junior members",
+        "Implemented and deployed cross-platform mobile applications built in React Native.",
+        "Implemented and deployed cross-platform mobile applications to control digital vehicle recorder devices on the car built in Flutter.",
+        "Reviewed client requirements, wireframes, and designs for technical feasibility.",
+        "Ensured quality and performance of application by performing unit and automation tests.",
+        "Reduced deployment time by 95% using FastLane and Jenkins to automate deployment to Apple Store Connect and Google Play Store.",
+        "Explored new technologies and shared knowledge such as automation deployment with the development team."
       ]
     },
     {
-      role: "Mobile team leader/manager / Mobile developer",
+      role: "Senior Mobile developer / Team leader",
       company: "The App Team",
       url: "https://www.theappteam.com.au/",
       companylogo: require("./assets/images/companies/theappteam.png"),
       date: "July 2017 - Sep 2019",
-      desc: "Team Manager - build up a new company.",
+      desc: "Australian-based boutique agency providing full end-to-end software development services.",
       descBullets: [
-        "Mobile Team Leader. Mobile Developer",
-        "Successfully build up a new company at the beginning",
-        "Planned, supervised, and coordinated daily activity of Vietnam team and Australia team",
-        "React Native developer",
-        "iOS Mobile Application developer"
+        "Interview and mentor junior members.",
+        "Planned, supervised, and coordinated daily activity of Vietnam team and Australia team.",
+        "Worked closely with product managers and designers to define a rich mobile user experience.",
+        "Determined technical feasibility of client requirements, wireframes, and designs.",
+        "Performed unit and automation tests to maintain system quality and performance.",
+        "Reduced deployment time by 80% through automation with Fastlane and Bitrise.",
+        "Researched and implemented new technologies such as push notifications, bug tracking, automatic deployment, and UI automation testing.",
       ]
     },
     {
-      role: "General Manager / Team Leader / Mobile Developer",
+      role: "General Manager / Mobile Developer",
       company: "Kerofrog",
       url: "https://twitter.com/kerofrogapps",
       companylogo: require("./assets/images/companies/kerofrog.jpg"),
       date: "May 2015 - July 2017",
-      // desc: "Build up a new company",
+      desc: "My own agency company providing software development services.",
       descBullets: [
-        "Build up a new company",
-        "Training team member",
-        "Build iOS Mobile application"
+        "Establish my own company.",
+        "Manage company up to 12 members",
+        "Hiring and training new members.",
+        "Reviewed client requirements, wireframes, and design technical architect.",
       ]
     },
     {
-      role: "Senior Mobile Developer",
+      role: "Mobile Developer",
       company: "Vinasource",
       url: "https://www.facebook.com/PoetaVietnam",
       companylogo: require("./assets/images/companies/vinasource.png"),
       date: "Nov 2012 – Jun 2015",
-      // desc: "Main responsible for iOS mobile project",
+      desc: "A technology and software company, specializing in digital transformation, CRM integration, workflow automation, app development, and more!",
       descBullets: [
-        "Main responsible for iOS mobile project",
-        "Guide new junior member"
+        "Worked closely with project managers and designers to define a rich mobile user experience on iOS.",
+        "Reviewed client requirements.",
+        "Self-planning tasks.",
       ]
     },
     {
@@ -253,10 +274,10 @@ const workExperiences = {
       url: "https://www.tma.vn/",
       companylogo: require("./assets/images/companies/tma.jpeg"),
       date: "Jan 2011 – Nov 2012",
-      // desc: "Main responsible for iOS mobile project",
+      desc: "TMA is the leading Vietnam software outsourcing company with 2700 engineers and 24 years of experience in providing quality software and IT outsourcing.",
       descBullets: [
-        "Develop new application base on requirement with iOS Objective-C",
-        "Write unit test"
+        "Develop new application base on client requirements with iOS Objective-C",
+        "Write unit test to ensure code quality",
       ]
     }
   ]
