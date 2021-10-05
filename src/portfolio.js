@@ -238,7 +238,7 @@ const workExperiences = {
         "Determined technical feasibility of client requirements, wireframes, and designs.",
         "Performed unit and automation tests to maintain system quality and performance.",
         "Reduced deployment time by 80% through automation with Fastlane and Bitrise.",
-        "Researched and implemented new technologies such as push notifications, bug tracking, automatic deployment, and UI automation testing.",
+        "Researched and implemented new technologies such as push notifications, bug tracking, automatic deployment, and UI automation testing."
       ]
     },
     {
@@ -252,7 +252,7 @@ const workExperiences = {
         "Establish my own company.",
         "Manage company up to 12 members",
         "Hiring and training new members.",
-        "Reviewed client requirements, wireframes, and design technical architect.",
+        "Reviewed client requirements, wireframes, and design technical architect."
       ]
     },
     {
@@ -265,7 +265,7 @@ const workExperiences = {
       descBullets: [
         "Worked closely with project managers and designers to define a rich mobile user experience on iOS.",
         "Reviewed client requirements.",
-        "Self-planning tasks.",
+        "Self-planning tasks."
       ]
     },
     {
@@ -277,7 +277,7 @@ const workExperiences = {
       desc: "TMA is the leading Vietnam software outsourcing company with 2700 engineers and 24 years of experience in providing quality software and IT outsourcing.",
       descBullets: [
         "Develop new application base on client requirements with iOS Objective-C",
-        "Write unit test to ensure code quality",
+        "Write unit test to ensure code quality"
       ]
     }
   ]
