@@ -1,11 +1,12 @@
 import React from "react";
 import "./GithubProfileCard.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import {contactInfo} from "../../portfolio";
+import {contactInfo, isHireable} from "../../portfolio";
+import emoji from "react-easy-emoji";
 import {Fade} from "react-reveal";
 
 export default function GithubProfileCard({prof}) {
-  if (prof.isHireable) {
+  if (isHireable) {
     prof.hireable = "Yes";
   } else {
     prof.hireable = "No";
@@ -19,7 +20,7 @@ export default function GithubProfileCard({prof}) {
             <div className="blog-header">
               <p className="subTitle blog-subtitle">{contactInfo.subtitle}</p>
             </div>
-            {/* <h2 className="bio-text">"{emoji(String(prof.bio))}"</h2> */}
+            <h2 className="bio-text">"{emoji(String(prof.bio))}"</h2>
             {prof.location !== null && (
               <div className="location-div">
                 <span className="desc-prof">
@@ -49,7 +50,8 @@ export default function GithubProfileCard({prof}) {
           </div>
           <div className="contact-image">
             <img
-              src={require("../../assets/images/contactMailDark.svg")}
+              // src={require("../../assets/images/contactMailDark.svg")}
+              src={prof.avatarUrl}
               alt={prof.name}
               className="image-content-profile"
             />
