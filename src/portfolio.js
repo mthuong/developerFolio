@@ -217,11 +217,56 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Senior Mobile Developer",
+      company: "GoGoX",
+      url: "https://apps.apple.com/us/app/gogox-gogovan-24-7-delivery/id708390467",
+      companylogo: require("./assets/images/companies/gogox.png"),
+      date: "Oct 2022 – Present",
+      desc: "Led technical initiatives to stabilize the core logistics application.",
+      descBullets: [
+        "Led technical initiatives to stabilize the core logistics application, successfully improving the crash-free rate from 82% to 97%.",
+        "Maintained 75% code coverage across the primary codebase by establishing and enforcing rigorous unit and UI testing standards.",
+        "Mentored junior and mid-level developers on Swift best practices, application architecture, and code quality.",
+        "Collaborated closely with product and backend teams to integrate complex API endpoints and optimize app performance under heavy load."
+      ]
+    },
+    {
+      role: "Senior Mobile Developer (Contract)",
+      company: "Kasha",
+      url: "https://www.kasha.com/",
+      companylogo: require("./assets/images/companies/kasha.png"),
+      date: "Dec 2024 – Oct 2025",
+      desc: "Spearheaded the development of a new, cross-platform mobile application from scratch using Flutter.",
+      descBullets: [
+        "Spearheaded the development of a new, cross-platform mobile application from scratch using Flutter, delivering a unified experience for both iOS and Android users.",
+        "Engineered and maintained custom native plugins (e.g., Kotlin/Swift) to bridge Flutter with platform-specific APIs for advanced hardware and payment integrations.",
+        "Established and automated CI/CD pipelines for streamlined building, testing, and deployment to the App Store and Google Play Store.",
+        "Authored a comprehensive suite of unit tests, achieving and maintaining 75% code coverage to ensure application stability and reduce regressions.",
+        "Architected and delivered Google Pay Push Provisioning, integrating with the Google Pay Console to enable users to seamlessly add payment cards to Google Wallet directly from the app.",
+        "Led the implementation of Apple Pay In-App Provisioning, allowing card issuers to provision payment, transit, and access cards directly into Apple Wallet from within the iOS application."
+      ]
+    },
+    {
+      role: "Senior Mobile Developer",
+      company: "CoinHako",
+      url: "https://www.coinhako.com/",
+      companylogo: require("./assets/images/companies/coinhako.png"),
+      date: "Oct 2021 – Oct 2022",
+      desc: "Spearheaded the modularization of the CoinHako iOS cryptocurrency exchange application into isolated feature modules.",
+      descBullets: [
+        "Spearheaded the modularization of the CoinHako iOS cryptocurrency exchange application into isolated feature modules (e.g., Wallet, Spot Trading, KYC), drastically improving build times, code maintainability, and cross-team velocity.",
+        "Integrated real-time, high-performance React Native modules into the native iOS application to efficiently handle live crypto market data, candlestick charts, and dynamic order books.",
+        "Ensured strict security standards for user assets by implementing secure enclave/keychain practices and biometric authentication during architectural updates.",
+        "Integrated a Flutter feature module into the existing native iOS/Android codebase, ensuring seamless UI/UX for fiat-to-crypto transactions and wallet management.",
+        "Leveraged deep understanding of payment systems to optimize fiat deposit/withdrawal flows, ensuring high transaction success rates and a smooth user experience."
+      ]
+    },
+    {
       role: "Mobile team leader / Mobile developer",
       company: "ItAds",
       url: "https://itads.net/",
       companylogo: require("./assets/images/companies/itads.png"),
-      date: "Oct 2019 – Present",
+      date: "Oct 2019 – Oct 2021",
       desc: "Developed, launched, and maintained an enterprise mobile application which serves marketing purposes for more than 2,000 Isuzu and Mitsubishi care salespeople in Thailand.",
       descBullets: [
         "Mentor for new junior members",
@@ -383,7 +428,7 @@ const achievementSection = {
       image: require("./assets/images/pwaLogo.webp"),
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: ""},
+        { name: "Certification", url: "" },
         {
           name: "Final Project",
           url: "https://pakistan-olx-1.firebaseapp.com/"
